@@ -1,0 +1,20 @@
+site_name: Painel de Gestão - Grupo Destak
+nav:
+  - Home: index.md
+  - Rebanho:
+    - GMD Médio: rebanho/gmd_medio.md
+  - Benchmark: 
+    - GMD Global 2024:  benchmark/gmd_global_2024.md
+
+theme:
+  name: material
+  features:
+    - content.code.copy  # Ativa o botão de copiar nos blocos de código
+
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.superfences
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - toggle-video.js

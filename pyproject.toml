@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "destak-documentacao-painel-de-gestao"
+version = "0.1.0"
+description = ""
+authors = ["olv-leo <olv.leo@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.49"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
