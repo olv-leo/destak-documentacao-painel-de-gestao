@@ -10,7 +10,7 @@ O cálculo baseia-se na diferença entre o peso final e o peso inicial de cada a
 
 **Fórmula Matemática:**  
 $$
-\text{cc\_gmd\_global\_2024} = \frac{(\text{cc\_peso\_ult\_pesagem\_2024} - \text{cc\_peso\_primeira\_pesagem\_2024})}{(\text{cc\_data\_ult\_pesagem\_2024} - \text{cc\_data\_primeira\_pesagem\_2024})}
+\text{gmd_global_2024} = \frac{(\text{peso_ult_pesagem_2024} - \text{peso_primeira_pesagem_2024})}{(\text{data_ult_pesagem_2024} - \text{data_primeira_pesagem_2024})}
 $$
 
 
@@ -18,7 +18,7 @@ $$
 **Vídeo Explicativo**
 
 <details>
-  <summary>Ver explicação</summary>
+  <summary>Ver explicação em vídeo</summary>
   
   <iframe width="560" height="315" src="https://youtu.be/cgFY926ESu4" 
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,7 +28,7 @@ $$
 
 
 ### **Fórmulas DAX**
-A seguir estão detalhadas todas as fórmulas DAX utilizadas para o cálculo do **GMD GLOBAL 2024**. 
+A seguir estão detalhadas todas as fórmulas DAX utilizadas. 
 
 
 #### Cálculo final

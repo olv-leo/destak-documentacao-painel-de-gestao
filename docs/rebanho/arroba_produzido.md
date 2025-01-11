@@ -1,20 +1,18 @@
-# **GMD MÉDIO**  
-Avalie o ganho médio de peso dos animais do rebanho nas últimas 2 pesagens.
+# **ARROBA PRODUZIDO**  
+Cálculo que avalia qual o total de @ produzido desde o início da avaliação dos registros
 
 ---
 
 ### **Explicação do Cálculo**  
-![Imagem do cálculo: GMD Médio ](assets\gmd_medio.png)
+![Imagem do cálculo: @ produzido](assets/arroba_produzido.png)
 
-
-Explicacao calculo 
 
 **Fórmula Matemática:**  
 $$
-\text{gmd_medio} =\frac{(\text{peso_ult_pesagem - peso_penultima_pesagem})}{\text{(data_ult_pesagem - data_penultima_pesagem)}}
+\text{@_produzido} = \text{soma_peso_atual_rebanho} - \text{soma_peso_inicial_rebanho}
 $$
 
-
+Planilha de exemplo: [Clique aqui](https://docs.google.com/spreadsheets/d/1JiBz9C6E1ee0s5IDCQ8Qxre8Savf4JEkSIXCmAOZJw0/edit?gid=1323946559#gid=1323946559)
 
 **Vídeo Explicativo**
 
@@ -33,33 +31,32 @@ A seguir estão detalhadas todas as fórmulas DAX utilizadas.
 
 #### Cálculo final
 ```dax
-GMD Médio = AVERAGE('CalcInfosAnimais'[cc_gmd_atual])
+Qtde total @ produzido = [Qtde total kg produzido] / [PESO DA @]
 ```
 
 ---
 #### Etapas do cálculo
-**1. Data penúltima pesagem**  
+**1. Data primeira pesagem**  
 
 ```dax
-cc_data_penultima_pesagem = 
+cc_data_primeira_pesagem = 
 VAR COD_CL = 'CalcInfosAnimais'[cod_animal]
-VAR DATA_ULT_PESAGEM = 'CalcInfosAnimais'[cc_data_ult_pesagem]
 
 RETURN 
 CALCULATE(
-    MAX('CalcAtividadeAnimai'[data]),
+    MIN('CalcAtividadeAnimai'[data]),
     FILTER(
         'CalcAtividadeAnimai',
-        'CalcAtividadeAnimai'[cod_animal] = COD_CL &&
-        ISNUMBER('CalcAtividadeAnimai'[peso]) &&
-        'CalcAtividadeAnimai'[data] < DATA_ULT_PESAGEM))
+        'CalcAtividadeAnimai'[cod_animal] = COD_CL 
+        && ISNUMBER('CalcAtividadeAnimai'[peso])
+))
 ```
-**2. Peso penúltima pesagem**  
+**2. Peso primeira pesagem**  
 
 ```dax
-cc_peso_penultima_pesagem = 
+cc_peso_primeira_pesagem = 
 VAR COD_CL = 'CalcInfosAnimais'[cod_animal]
-VAR DATA_PENULT_PESAGEM_CL = 'CalcInfosAnimais'[cc_data_penultima_pesagem]
+VAR DATA_PRIMEIRA_PESAGEM_CL = 'CalcInfosAnimais'[cc_data_primeira_pesagem]
 
 RETURN 
 CALCULATE(
@@ -68,8 +65,10 @@ CALCULATE(
         'CalcAtividadeAnimai',
         'CalcAtividadeAnimai'[cod_animal] = COD_CL &&
         ISNUMBER('CalcAtividadeAnimai'[peso]) &&
-        'CalcAtividadeAnimai'[data] = DATA_PENULT_PESAGEM_CL))
+        'CalcAtividadeAnimai'[data] = DATA_PRIMEIRA_PESAGEM_CL))
+
 ```
+
 **3. Data última pesagem**  
 
 ```dax
@@ -100,16 +99,11 @@ CALCULATE(
         'CalcAtividadeAnimai'[cod_animal] = COD_CL &&
         ISNUMBER('CalcAtividadeAnimai'[peso]) &&
         'CalcAtividadeAnimai'[data] = DATA_ULT_PESAGEM_CL))
-
 ```
-**5. Cálculo do GMD por animal**  
+**5. Cálcular o número de Kg ganhos**  
 
 ```dax
-cc_gmd_atual = 
-SWITCH(
-    TRUE()
-    ,OR(ISBLANK('CalcInfosAnimais'[cc_peso_ult_pesagem]), ISBLANK('CalcInfosAnimais'[cc_peso_penultima_pesagem])), BLANK()
-    ,DIVIDE(([cc_peso_ult_pesagem] - [cc_peso_penultima_pesagem]), ([cc_data_ult_pesagem] - [cc_data_penultima_pesagem]), BLANK()))
+Qtde total kg produzido = SUMX(CalcInfosAnimais, CalcInfosAnimais[cc_peso_ult_pesagem] - CalcInfosAnimais[cc_peso_primeira_pesagem])
 ```
 
 
