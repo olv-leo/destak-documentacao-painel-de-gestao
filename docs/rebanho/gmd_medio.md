@@ -20,9 +20,7 @@ $$
 
 <details>
   <summary>Ver explicação em vídeo</summary>
-  
-  <iframe width="560" height="315" src="LINK_VIDEO" 
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/U9wv1_mwHhI?si=F6COFKjhEOmxrscn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </details>
 </br>
 

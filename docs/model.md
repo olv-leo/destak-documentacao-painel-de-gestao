@@ -20,8 +20,7 @@ $$
 <details>
   <summary>Ver explicação</summary>
   
-  <iframe width="560" height="315" src="LINK_VIDEO" 
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+PEGAR_FRAME_YOUTUBE
 </details>
 </br>
 
