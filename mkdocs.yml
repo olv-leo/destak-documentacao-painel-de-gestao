@@ -1,6 +1,6 @@
 site_name: Painel de Gestão - Grupo Destak
 nav:
-  - Home: home/index.md
+  - Home: index.md
   - Rebanho:
     - Arroba Produzido: rebanho/arroba_produzido.md
     - GMD Médio: rebanho/gmd_medio.md
