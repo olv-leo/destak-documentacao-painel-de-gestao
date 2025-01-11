@@ -189,7 +189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../home/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -236,6 +236,27 @@
             Rebanho
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rebanho/arroba_produzido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arroba Produzido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -503,11 +524,11 @@
 <p>O cálculo baseia-se na diferença entre o peso final e o peso inicial de cada animal, dividida pelo intervalo de tempo (em dias) entre as duas pesagens.  </p>
 <p><strong>Fórmula Matemática:</strong><br />
 $$
-\text{cc_gmd_global_2024} = \frac{(\text{cc_peso_ult_pesagem_2024} - \text{cc_peso_primeira_pesagem_2024})}{(\text{cc_data_ult_pesagem_2024} - \text{cc_data_primeira_pesagem_2024})}
+\text{gmd_global_2024} = \frac{(\text{peso_ult_pesagem_2024} - \text{peso_primeira_pesagem_2024})}{(\text{data_ult_pesagem_2024} - \text{data_primeira_pesagem_2024})}
 $$</p>
 <p><strong>Vídeo Explicativo</strong></p>
 <details>
-  <summary>Ver explicação</summary>
+  <summary>Ver explicação em vídeo</summary>
 
   <iframe width="560" height="315" src="https://youtu.be/cgFY926ESu4" 
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -515,7 +536,7 @@ $$</p>
 
 <p></br></p>
 <h3 id="formulas-dax"><strong>Fórmulas DAX</strong></h3>
-<p>A seguir estão detalhadas todas as fórmulas DAX utilizadas para o cálculo do <strong>GMD GLOBAL 2024</strong>. </p>
+<p>A seguir estão detalhadas todas as fórmulas DAX utilizadas. </p>
 <h4 id="calculo-final">Cálculo final</h4>
 <div class="highlight"><pre><span></span><code>cc_gmd_global_2024 = 
 <span class="nf">SWITCH</span><span class="p">(</span>
