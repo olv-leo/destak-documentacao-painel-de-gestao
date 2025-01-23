@@ -1,6 +1,6 @@
 # Documentação Painel de Gestão
 
-![alt text](assets/logo_destak.png)
+![alt text](assets/logo_destak.jpg)
 Documentação do cálculo dos indicadores realizados no Painel de Gestão do Grupo Destak.
 
 <details>
