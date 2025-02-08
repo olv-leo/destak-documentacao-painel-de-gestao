@@ -2,12 +2,12 @@ site_name: Painel de Gestão - Grupo Destak
 nav:
   - Home: index.md
   - Financeiro:
-    - GRUPO DESTAK: financeiro/grupo_destak.md
+    - Grupo Destak: financeiro/grupo_destak.md
   - Rebanho:
     - Arroba Produzido: rebanho/arroba_produzido.md
     - GMD Médio: rebanho/gmd_medio.md
-  - Benchmark: 
-    - GMD Global 2024:  benchmark/gmd_global_2024.md
+  - Benchmark Recria : 
+    - Lotação do Pasto:  benchmark_recria/lotacao_pasto.md
 
 theme:
   name: material
