@@ -2,9 +2,9 @@
 
 O indicador de lotação do pasto é calculado da seguinte forma:  
 
-\[
+$$
 \text{Lotação do Pasto} = \frac{\left(\frac{\text{Peso do Rebanho}}{\text{UA}}\right)}{\text{HA}}
-\]
+$$
 
 ## **Pontos importantes:**  
 
