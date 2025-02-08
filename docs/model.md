@@ -29,13 +29,13 @@ PEGAR_FRAME_YOUTUBE
 A seguir estão detalhadas todas as fórmulas DAX utilizadas.
 
 
-#### Cálculo final
+#### **Cálculo final**  
 ```dax
 
 ```
 
 ---
-#### Etapas do cálculo
+#### **Medidas intermediárias**  
 **1. Titulo**  
 
 ```dax

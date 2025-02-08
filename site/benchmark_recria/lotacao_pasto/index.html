@@ -602,6 +602,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#explicacao-do-calculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicação do Cálculo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pontos-importantes" class="md-nav__link">
     <span class="md-ellipsis">
       Pontos importantes:
@@ -710,6 +719,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#explicacao-do-calculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicação do Cálculo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pontos-importantes" class="md-nav__link">
     <span class="md-ellipsis">
       Pontos importantes:
@@ -791,27 +809,38 @@
 
 
 <h1 id="lotacao-do-pasto-uaha"><strong>Lotação do Pasto (UA/HA)</strong><a class="headerlink" href="#lotacao-do-pasto-uaha" title="Permanent link">&para;</a></h1>
-<p>O indicador de lotação do pasto é calculado da seguinte forma:  </p>
-<div class="arithmatex">\[
+<hr />
+<h3 id="explicacao-do-calculo"><strong>Explicação do Cálculo</strong><a class="headerlink" href="#explicacao-do-calculo" title="Permanent link">&para;</a></h3>
+<p><img alt="Imagem do cálculo: " src="link_img" /></p>
+<p>Explicacao calculo </p>
+<p><strong>Fórmula Matemática:</strong><br />
+$$
 \text{Lotação do Pasto} = \frac{\left(\frac{\text{Peso do Rebanho}}{\text{UA}}\right)}{\text{HA}}
-\]</div>
-<h2 id="pontos-importantes"><strong>Pontos importantes:</strong><a class="headerlink" href="#pontos-importantes" title="Permanent link">&para;</a></h2>
-<h3 id="peso-do-rebanho"><strong>Peso do Rebanho</strong><a class="headerlink" href="#peso-do-rebanho" title="Permanent link">&para;</a></h3>
+$$</p>
+<p><strong>Vídeo Explicativo</strong></p>
+<details>
+  <summary>Ver explicação</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wJrcgFslJkE?si=QsNAuiwqRss3TjLX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</details>
+<p></br></p>
+<h3 id="pontos-importantes"><strong>Pontos importantes:</strong><a class="headerlink" href="#pontos-importantes" title="Permanent link">&para;</a></h3>
+<p>https://youtu.be/wJrcgFslJkE</p>
+<h4 id="peso-do-rebanho"><strong>Peso do Rebanho</strong><a class="headerlink" href="#peso-do-rebanho" title="Permanent link">&para;</a></h4>
 <p>O valor do peso do rebanho varia de acordo com o contexto:  </p>
 <ul>
 <li><strong>Mensal:</strong> Representa a soma do ÚLTIMO peso registrado de todos os animais que estavam no rebanho naquele mês.  </li>
 <li><strong>Anual:</strong> Corresponde à média dos pesos mensais ao longo do ano.  </li>
 <li><strong>Geral:</strong> Representa a média dos pesos mensais durante o período selecionado.  </li>
 </ul>
-<h3 id="unidade-animal-ua"><strong>Unidade Animal (UA)</strong><a class="headerlink" href="#unidade-animal-ua" title="Permanent link">&para;</a></h3>
+<h4 id="unidade-animal-ua"><strong>Unidade Animal (UA)</strong><a class="headerlink" href="#unidade-animal-ua" title="Permanent link">&para;</a></h4>
 <p>Consideramos o valor da UA igual a <strong>450 kg</strong>.  </p>
-<h2 id="formulas-dax"><strong>Fórmulas DAX</strong><a class="headerlink" href="#formulas-dax" title="Permanent link">&para;</a></h2>
+<h3 id="formulas-dax"><strong>Fórmulas DAX</strong><a class="headerlink" href="#formulas-dax" title="Permanent link">&para;</a></h3>
 <p>A seguir estão detalhadas todas as fórmulas DAX utilizadas.  </p>
-<h3 id="calculo-final"><strong>Cálculo final</strong><a class="headerlink" href="#calculo-final" title="Permanent link">&para;</a></h3>
+<h4 id="calculo-final"><strong>Cálculo final</strong><a class="headerlink" href="#calculo-final" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>Lotação Pasto = [UA] / [HA]
 </code></pre></div>
 <hr />
-<h3 id="medidas-intermediarias"><strong>Medidas intermediárias</strong><a class="headerlink" href="#medidas-intermediarias" title="Permanent link">&para;</a></h3>
+<h4 id="medidas-intermediarias"><strong>Medidas intermediárias</strong><a class="headerlink" href="#medidas-intermediarias" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>Peso Médio por Mês = 
 <span class="nb">VAR</span><span class="w"> </span>ANOMES_FILTRADO = DISTINCTCOUNT(&#39;PesoPorAnimalPorMes&#39;[ano_mes])
 <span class="nb">VAR</span><span class="w"> </span>PESO = SUM(&#39;PesoPorAnimalPorMes&#39;[peso])

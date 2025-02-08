@@ -1,34 +1,45 @@
 # **Lotação do Pasto (UA/HA)**  
 
-O indicador de lotação do pasto é calculado da seguinte forma:  
-
+---
+### **Explicação do Cálculo**  
+**Fórmula Matemática:**  
 $$
 \text{Lotação do Pasto} = \frac{\left(\frac{\text{Peso do Rebanho}}{\text{UA}}\right)}{\text{HA}}
 $$
 
-## **Pontos importantes:**  
 
-### **Peso do Rebanho**  
+**Vídeo Explicativo**
+<details>
+  <summary>Ver explicação</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wJrcgFslJkE?si=QsNAuiwqRss3TjLX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</details>
+</br>
+
+
+
+### **Pontos importantes:**  
+
+#### **Peso do Rebanho**  
 O valor do peso do rebanho varia de acordo com o contexto:  
 
 - **Mensal:** Representa a soma do ÚLTIMO peso registrado de todos os animais que estavam no rebanho naquele mês.  
 - **Anual:** Corresponde à média dos pesos mensais ao longo do ano.  
 - **Geral:** Representa a média dos pesos mensais durante o período selecionado.  
 
-### **Unidade Animal (UA)**  
+#### **Unidade Animal (UA)**  
 Consideramos o valor da UA igual a **450 kg**.  
 
-## **Fórmulas DAX**  
+### **Fórmulas DAX**  
 A seguir estão detalhadas todas as fórmulas DAX utilizadas.  
 
-### **Cálculo final**  
+#### **Cálculo final**  
 ```dax
 Lotação Pasto = [UA] / [HA]
 ```  
 
 ---  
 
-### **Medidas intermediárias**  
+#### **Medidas intermediárias**  
 
 ```dax
 Peso Médio por Mês = 
