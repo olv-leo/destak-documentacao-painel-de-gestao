@@ -3,6 +3,7 @@ nav:
   - Home: index.md
   - Financeiro:
     - Grupo Destak: financeiro/grupo_destak.md
+    - Lançamentos Estoque: financeiro/lancamentos-estoque.md
   - Rebanho:
     - Arroba Produzido: rebanho/arroba_produzido.md
     - GMD Médio: rebanho/gmd_medio.md
