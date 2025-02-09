@@ -3,7 +3,7 @@ Descrição
 
 ---
 
-### **Explicação do Cálculo**  
+## **Explicação do Cálculo**  
 ![Imagem do cálculo: ](link_img)
 
 Explicacao calculo 
@@ -25,21 +25,48 @@ PEGAR_FRAME_YOUTUBE
 </br>
 
 
-### **Fórmulas DAX**
+## **Fórmulas DAX**
 A seguir estão detalhadas todas as fórmulas DAX utilizadas.
 
 
-#### **Cálculo final**  
+### **Cálculo final**  
 ```dax
 
 ```
 
 ---
-#### **Medidas intermediárias**  
+### **Medidas intermediárias**  
 **1. Titulo**  
 
 ```dax
 
 ```
 
+### **Benchmarks e Indicadores**  
 
+#### **Médias de Benchmark**
+```dax
+
+```
+
+```dax
+```
+
+```dax
+
+```
+
+#### **Atingimento dos Benchmarks**
+```dax
+
+```
+
+```dax
+
+```
+
+```dax
+
+```
+
+---  
