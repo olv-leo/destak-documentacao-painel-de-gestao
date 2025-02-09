@@ -4,9 +4,6 @@ Descrição
 ---
 
 ## **Explicação do Cálculo**  
-![Imagem do cálculo: ](link_img)
-
-Explicacao calculo 
 
 **Fórmula Matemática:**  
 $$

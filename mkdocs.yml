@@ -8,6 +8,7 @@ nav:
     - Arroba Produzido: rebanho/arroba_produzido.md
     - GMD Médio: rebanho/gmd_medio.md
   - Benchmark Recria : 
+    - Custo por Cabeça: benchmark_recria/custo_por_cabeca.md
     - Faturamento por Funcionário:  benchmark_recria/faturamento_por_funcionario.md
     - GMD Global:  benchmark_recria/gmd_global.md
     - Lotação do Pasto:  benchmark_recria/lotacao_pasto.md
