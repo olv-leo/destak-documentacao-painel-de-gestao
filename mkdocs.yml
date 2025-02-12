@@ -12,6 +12,7 @@ nav:
     - Faturamento por Funcionário:  benchmark_recria/faturamento_por_funcionario.md
     - GMD Global:  benchmark_recria/gmd_global.md
     - Lotação do Pasto:  benchmark_recria/lotacao_pasto.md
+    - Mortalidade Animais Adultos:  benchmark_recria/mortalidade_animais_adultos.md
     - Precipitação Anual:  benchmark_recria/precipitacao-anual.md
 
 theme:
