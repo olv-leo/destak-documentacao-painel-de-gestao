@@ -1,4 +1,4 @@
 # **Faturamento Pecuário por HA**  
 
 A lógica de cálculo segue o mesmo princípio do **Benchmark de Recria**. Para mais detalhes, consulte a página dedicada:  
-[Faturamento Pecuário por HA - Benchmark de Recria](/benchmark_recria/faturamento_pecuario_por_ha)
+[Faturamento Pecuário por HA - Benchmark de Recria](../benchmark_recria/faturamento_pecuario_por_ha.md)
