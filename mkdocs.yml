@@ -7,6 +7,14 @@ nav:
   - Rebanho:
     - Arroba Produzido: rebanho/arroba_produzido.md
     - GMD Médio: rebanho/gmd_medio.md
+  - Benchmark Cria : 
+    - Custo por Cabeça: benchmark_cria/custo_por_cabeca.md
+    - Faturamento Pecuário por HA:  benchmark_cria/faturamento_pecuario_por_ha.md
+    - Faturamento por Funcionário:  benchmark_cria/faturamento_por_funcionario.md
+    - GMD Global:  benchmark_cria/gmd_global.md
+    - Lotação do Pasto:  benchmark_cria/lotacao_pasto.md
+    - Mortalidade Animais Adultos:  benchmark_cria/mortalidade_animais_adultos.md
+    - Precipitação Anual:  benchmark_cria/precipitacao-anual.md
   - Benchmark Recria : 
     - Custo por Cabeça: benchmark_recria/custo_por_cabeca.md
     - Faturamento Pecuário por HA:  benchmark_recria/faturamento_pecuario_por_ha.md
