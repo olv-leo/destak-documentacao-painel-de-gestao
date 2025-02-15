@@ -11,6 +11,11 @@ Este documento registra todas as alterações realizadas para facilitar buscas e
   - **Descrição:** Painel não estava considerando todos os bezerros.
   - **Ajuste realizado:** Ajuste na query `TodasMovimentações`, agora todos animais que entram via planilha de `nascimentos`recebem a categoria de `BEZERRO`. 
 
+- **Painéis Impactados:**
+  - [Mortes Bezerros - Benchmark Cria](./benchmark_cria/mortalidade_bezerros.md)
+  - [Mortes Bezerros - Benchmark Recria](./benchmark_recria/mortalidade_bezerros.md)
+
+
 ### **Lotação Pasto (UA/HA)**
 
 - **Ajuste na Medida de HA Usado**
