@@ -52,16 +52,16 @@ DIVIDE([Custo médio mensal], [Número de cabeças])
 
 ### **Medidas Intermediárias**  
 ```dax
-Custo médio mensal = 
-VAR TotalCusto = 
+Custo médio mensal =
+VAR TotalCusto =
     CALCULATE(
         SUM(MovimentacoesFinanceiras[valor_pagamento]),
         MovimentacoesFinanceiras[classificacao] = "DESPESAS"
     )
-VAR DistinctMonths = 
+VAR DistinctMonths =
     DISTINCTCOUNT('Calendário'[ano_mes])
 
-RETURN 
+RETURN
     DIVIDE(TotalCusto, DistinctMonths)
 ```
 

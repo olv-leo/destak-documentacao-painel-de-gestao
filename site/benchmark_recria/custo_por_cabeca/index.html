@@ -1032,6 +1032,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ajustes-realizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajustes Realizados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajustes Realizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#15022025-ajuste-no-calculo-do-custo-medio-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      15/02/2025 - Ajuste no Cálculo do Custo Médio Mensal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1341,6 +1365,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ajustes-realizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajustes Realizados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajustes Realizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#15022025-ajuste-no-calculo-do-custo-medio-mensal" class="md-nav__link">
+    <span class="md-ellipsis">
+      15/02/2025 - Ajuste no Cálculo do Custo Médio Mensal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1413,16 +1461,16 @@ $$</p>
 <span class="nf">DIVIDE</span><span class="p">(</span><span class="na">[Custo médio mensal]</span><span class="p">,</span><span class="w"> </span><span class="na">[Número de cabeças]</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="medidas-intermediarias"><strong>Medidas Intermediárias</strong><a class="headerlink" href="#medidas-intermediarias" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Custo médio mensal = 
-<span class="nb">VAR</span><span class="w"> </span>TotalCusto = 
+<div class="highlight"><pre><span></span><code>Custo médio mensal =
+<span class="nb">VAR</span><span class="w"> </span>TotalCusto =
 <span class="w">    </span><span class="nf">CALCULATE</span><span class="p">(</span>
 <span class="w">        </span><span class="nf">SUM</span><span class="p">(</span><span class="na">MovimentacoesFinanceiras[valor_pagamento]</span><span class="p">),</span>
 <span class="w">        </span><span class="na">MovimentacoesFinanceiras[classificacao]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;DESPESAS&quot;</span>
 <span class="w">    </span><span class="p">)</span>
-<span class="nb">VAR</span><span class="w"> </span>DistinctMonths = 
+<span class="nb">VAR</span><span class="w"> </span>DistinctMonths =
 <span class="w">    </span><span class="nf">DISTINCTCOUNT</span><span class="p">(</span><span class="na">&#39;Calendário&#39;[ano_mes]</span><span class="p">)</span>
 
-<span class="nb">RETURN</span><span class="w"> </span>
+<span class="nb">RETURN</span>
 <span class="w">    </span><span class="nf">DIVIDE</span><span class="p">(</span>TotalCusto, DistinctMonths)
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>Número de cabeças =
@@ -1462,6 +1510,11 @@ $$</p>
 <span class="w">    </span><span class="na">[Custo por cabeça]</span><span class="p">,</span>
 <span class="w">    </span><span class="p">[</span>Bench - Custo por cabeça (Média top rentáveis)])
 </code></pre></div>
+<hr />
+<h2 id="ajustes-realizados"><strong>Ajustes Realizados</strong><a class="headerlink" href="#ajustes-realizados" title="Permanent link">&para;</a></h2>
+<h3 id="15022025-ajuste-no-calculo-do-custo-medio-mensal"><strong>15/02/2025 - Ajuste no Cálculo do Custo Médio Mensal</strong><a class="headerlink" href="#15022025-ajuste-no-calculo-do-custo-medio-mensal" title="Permanent link">&para;</a></h3>
+<p><strong>Descrição:</strong> Foi solicitado um ajuste na forma de calcular o custo médio mensal para que o filtro de saída considere apenas "DESPESAS".<br />
+<strong>O que mudou:</strong> A medida <code>Custo médio mensal</code> foi alterada para garantir que apenas valores classificados como "DESPESAS" sejam incluídos no cálculo do custo mensal.</p>
 <hr />
 
 

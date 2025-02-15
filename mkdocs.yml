@@ -24,6 +24,7 @@ nav:
     - Lotação do Pasto:  benchmark_recria/lotacao_pasto.md
     - Mortalidade Animais Adultos:  benchmark_recria/mortalidade_animais_adultos.md
     - Precipitação Anual:  benchmark_recria/precipitacao-anual.md
+  - Histórico de ajustes:  historico_de_ajustes.md
 
 theme:
   name: material
