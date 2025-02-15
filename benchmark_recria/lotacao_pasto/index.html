@@ -1304,9 +1304,14 @@ $$</p>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>Const - UA = 450
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>UA = [Peso Médio por Mês] / [Const - UA]
+<div class="highlight"><pre><span></span><code>UA = 
+<span class="nf">DIVIDE</span><span class="p">(</span>
+<span class="w">    </span><span class="na">[Peso Médio por Mês]</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span>Const - UA]
+<span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>HA = SUM(Fazendas[area_ha])
+<div class="highlight"><pre><span></span><code>HA pasto = 
+<span class="nf">SUM</span><span class="p">(</span><span class="na">Fazendas[area_ha_pasto]</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>Bench - Lotação Pasto UA/HA (Média clientes) = CALCULATE(SUM(BenchmarkRecria[media_clientes]), BenchmarkRecria[metrica] = &quot;LOTAÇÃO PASTO UA/HA&quot;)
 </code></pre></div>
