@@ -59,11 +59,16 @@ Const - UA = 450
 ```  
 
 ```dax
-UA = [Peso Médio por Mês] / [Const - UA]
+UA = 
+DIVIDE(
+    [Peso Médio por Mês],
+    [Const - UA]
+)
 ```  
 
 ```dax
-HA = SUM(Fazendas[area_ha])
+HA pasto = 
+SUM(Fazendas[area_ha_pasto])
 ```  
 
 ```dax
