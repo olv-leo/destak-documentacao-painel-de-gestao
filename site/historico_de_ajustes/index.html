@@ -1066,6 +1066,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#mortes-bezerros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mortes Bezerros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lotacao-pasto-uaha" class="md-nav__link">
     <span class="md-ellipsis">
       Lotação Pasto (UA/HA)
@@ -1151,6 +1160,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#mortes-bezerros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mortes Bezerros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lotacao-pasto-uaha" class="md-nav__link">
     <span class="md-ellipsis">
       Lotação Pasto (UA/HA)
@@ -1210,12 +1228,25 @@
 <p>Este documento registra todas as alterações realizadas para facilitar buscas e consultas futuras.</p>
 <hr />
 <h2 id="15022025"><strong>15/02/2025</strong><a class="headerlink" href="#15022025" title="Permanent link">&para;</a></h2>
+<h3 id="mortes-bezerros"><strong>Mortes Bezerros</strong><a class="headerlink" href="#mortes-bezerros" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Ajuste query TodasMovimentações</strong></li>
+<li><strong>Descrição:</strong> Painel não estava considerando todos os bezerros.</li>
+<li>
+<p><strong>Ajuste realizado:</strong> Ajuste na query <code>TodasMovimentações</code>, agora todos animais que entram via planilha de <code>nascimentos</code>recebem a categoria de <code>BEZERRO</code>. </p>
+</li>
+<li>
+<p><strong>Painéis Impactados:</strong></p>
+</li>
+<li><a href="../benchmark_cria/mortalidade_bezerros/">Mortes Bezerros - Benchmark Cria</a></li>
+<li><a href="./benchmark_recria/mortalidade_bezerros.md">Mortes Bezerros - Benchmark Recria</a></li>
+</ul>
 <h3 id="lotacao-pasto-uaha"><strong>Lotação Pasto (UA/HA)</strong><a class="headerlink" href="#lotacao-pasto-uaha" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Ajuste na Medida de HA Usado</strong></li>
 <li><strong>Descrição:</strong> O cálculo foi ajustado para considerar <code>HA pasto</code> em vez de <code>HA geral</code>.</li>
 <li>
-<p><strong>O que mudou:</strong> A medida <code>HA</code> foi substituída por <code>HA pasto</code> para refletir o uso correto de área.</p>
+<p><strong>Ajuste realizado:</strong> A medida <code>HA</code> foi substituída por <code>HA pasto</code> para refletir o uso correto de área.</p>
 </li>
 <li>
 <p><strong>Painéis Impactados:</strong></p>
@@ -1226,7 +1257,8 @@
 <h3 id="valor-ha-pasto"><strong>Valor HA Pasto</strong><a class="headerlink" href="#valor-ha-pasto" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Ajuste no valor do HA Pasto</strong></li>
-<li><strong>Descrição:</strong> Atualização nos valores de <code>HA pasto</code> para as seguintes fazendas:<ul>
+<li><strong>Descrição:</strong> Atualização nos valores de <code>HA pasto</code> para algumas fazendas.</li>
+<li><strong>Ajuste realizado:</strong>: Mudança nos valores das seguintes fazendas:<ul>
 <li><strong>AURORA</strong>: 411,24 → 431,24</li>
 <li><strong>DESTAK</strong>: 412,12 → 411,12</li>
 </ul>
@@ -1237,7 +1269,7 @@
 <li><strong>Ajuste na Medida de HA Usado</strong></li>
 <li><strong>Descrição:</strong> O cálculo foi ajustado para considerar <code>HA pasto</code> em vez de <code>HA geral</code>.</li>
 <li>
-<p><strong>O que mudou:</strong> A medida <code>HA</code> foi substituída por <code>HA pasto</code> para refletir o uso correto de área.</p>
+<p><strong>Ajuste realizado:</strong> A medida <code>HA</code> foi substituída por <code>HA pasto</code> para refletir o uso correto de área.</p>
 </li>
 <li>
 <p><strong>Painéis Impactados:</strong></p>
@@ -1250,7 +1282,7 @@
 <li><strong>Ajuste no Cálculo do Custo</strong></li>
 <li><strong>Descrição:</strong> O cálculo do custo médio mensal foi refinado para garantir que apenas registros classificados como "DESPESAS" sejam considerados no filtro de saída.</li>
 <li>
-<p><strong>O que mudou:</strong> A medida <code>Custo médio mensal</code> foi ajustada para excluir qualquer valor que não se enquadre na categoria "DESPESAS".</p>
+<p><strong>Ajuste realizado:</strong> A medida <code>Custo médio mensal</code> foi ajustada para excluir qualquer valor que não se enquadre na categoria "DESPESAS".</p>
 </li>
 <li>
 <p><strong>Painéis Impactados:</strong></p>
