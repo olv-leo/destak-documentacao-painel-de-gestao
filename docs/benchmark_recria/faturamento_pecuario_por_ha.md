@@ -13,7 +13,8 @@ A seguir estão detalhadas todas as fórmulas DAX utilizadas.
 
 #### **Cálculo final**  
 ```dax
-Faturamento pecuário por HA = [Faturamento] / [HA]
+Faturamento pecuário por HA = 
+DIVIDE([Faturamento], [HA pasto])
 ```  
 
 ---  
