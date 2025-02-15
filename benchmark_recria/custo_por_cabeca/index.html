@@ -302,6 +302,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../historico_de_ajustes/" class="md-tabs__link">
+        
+  
+    
+  
+  Histórico de ajustes
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -1174,6 +1191,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../historico_de_ajustes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórico de ajustes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1413,16 +1450,16 @@ $$</p>
 <span class="nf">DIVIDE</span><span class="p">(</span><span class="na">[Custo médio mensal]</span><span class="p">,</span><span class="w"> </span><span class="na">[Número de cabeças]</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="medidas-intermediarias"><strong>Medidas Intermediárias</strong><a class="headerlink" href="#medidas-intermediarias" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Custo médio mensal = 
-<span class="nb">VAR</span><span class="w"> </span>TotalCusto = 
+<div class="highlight"><pre><span></span><code>Custo médio mensal =
+<span class="nb">VAR</span><span class="w"> </span>TotalCusto =
 <span class="w">    </span><span class="nf">CALCULATE</span><span class="p">(</span>
 <span class="w">        </span><span class="nf">SUM</span><span class="p">(</span><span class="na">MovimentacoesFinanceiras[valor_pagamento]</span><span class="p">),</span>
 <span class="w">        </span><span class="na">MovimentacoesFinanceiras[classificacao]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;DESPESAS&quot;</span>
 <span class="w">    </span><span class="p">)</span>
-<span class="nb">VAR</span><span class="w"> </span>DistinctMonths = 
+<span class="nb">VAR</span><span class="w"> </span>DistinctMonths =
 <span class="w">    </span><span class="nf">DISTINCTCOUNT</span><span class="p">(</span><span class="na">&#39;Calendário&#39;[ano_mes]</span><span class="p">)</span>
 
-<span class="nb">RETURN</span><span class="w"> </span>
+<span class="nb">RETURN</span>
 <span class="w">    </span><span class="nf">DIVIDE</span><span class="p">(</span>TotalCusto, DistinctMonths)
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>Número de cabeças =
