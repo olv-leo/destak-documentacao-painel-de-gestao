@@ -14,6 +14,7 @@ nav:
     - GMD Global:  benchmark_cria/gmd_global.md
     - Lotação do Pasto:  benchmark_cria/lotacao_pasto.md
     - Mortalidade Animais Adultos:  benchmark_cria/mortalidade_animais_adultos.md
+    - Mortalidade Bezerros:  benchmark_cria/mortalidade_bezerros.md
     - Precipitação Anual:  benchmark_cria/precipitacao-anual.md
   - Benchmark Recria : 
     - Custo por Cabeça: benchmark_recria/custo_por_cabeca.md
