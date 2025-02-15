@@ -29,8 +29,8 @@ CALCULATE(
 ```  
 
 ```dax
-HA = 
-SUM(Fazendas[area_ha])
+HA pasto = 
+SUM(Fazendas[area_ha_pasto])
 ```  
 
 ## **Benchmarks e Indicadores**  
